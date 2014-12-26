@@ -4,6 +4,7 @@ angular.module('starter.services', [])
     Ceres = null;
     Tasks = null;
     tasksRQ = null;
+    var count = 0;
 
     function getName() {
         return "hi there!";
@@ -11,7 +12,7 @@ angular.module('starter.services', [])
 
     function getHistory() {
     	if (tasksRQ) {
-	        console.log("getHistory", tasksRQ.result);
+	        console.log("getHistory: ", tasksRQ.result.length);
     	    return tasksRQ.result;
         }
     }

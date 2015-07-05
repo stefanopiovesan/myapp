@@ -1,6 +1,6 @@
 angular.module('starter.services', [])
 .factory('myService', function($q, $rootScope) {
-
+// just for feeds
     Ceres = null;
     Tasks = null;
     tasksRQ = null;
